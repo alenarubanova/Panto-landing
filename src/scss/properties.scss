@@ -1,0 +1,47 @@
+.properties {
+    padding: 120px 0;
+}
+
+.properties-cards {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 -15px;
+}
+
+.properties-title {
+    width: 242px;
+    font-family: 'Montserrat';
+    text-transform: capitalize;
+    font-size: 34px;
+    margin: 0 15px;
+    color: $_black;
+    font-weight: 700;
+    align-self: center;
+}
+.properties-card {
+    width: 284px;
+    margin: 0 15px;
+    .properties-card__title {
+        @include properties-title;
+        margin-bottom: 20px;
+    }
+    .properties-card__subtitle {
+        margin-bottom: 14px;
+        p{
+            @include properties-subtitle;
+        }
+    }
+    .properties-card__button {
+        display: inline-flex;
+        align-items: center;
+        a{
+            @include properties-button;
+            margin-right: 13px;
+        }
+        &::after{
+            content: url(../img/imgAbout/ArrowRight.svg);
+            height: 24px;
+            cursor: pointer;
+        }
+    }
+}
