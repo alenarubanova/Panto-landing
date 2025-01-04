@@ -1,0 +1,19 @@
+@import './variables';
+@import './fonts';
+@import './mixins';
+@import './header.scss';
+
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1170px;
+    margin: auto;
+    padding: 0 15px;
+}

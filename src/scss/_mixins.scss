@@ -1,0 +1,15 @@
+@mixin subtitle{
+    font-family: "Montserrat";
+    font-size: $_subtitle;
+    color: $_white;
+    font-weight: 200;
+    text-align: center;
+}
+
+@mixin search-input {
+    font-family: "Montserrat";
+    color: $_search;
+    font-size: $_nav;
+    font-weight: 200;
+}
+
